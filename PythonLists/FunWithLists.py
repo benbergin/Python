@@ -37,11 +37,6 @@ from pprint import pprint
 pprint(tokensToBuy)
 print()
 
-print("Let's ")
-
-
-
-
 
 # This list has duplicates; write a function to remove the duplicates
 cryptoListDups = ['BTC','ETH','ALGO','SOL','ETH','ALGO','BTC','ETH','ALGO','LUNA','DOT']
@@ -61,8 +56,10 @@ def RemoveListDuplicates(theList, doSort = 0) -> object:
     return theList
 
 cryptoCleanList = RemoveListDuplicates(cryptoListDups,1)
-print('Token list with duplicates removed:')
+print('Crypto list with duplicates removed:')
 print(cryptoListDups)
+print()
+print('You can also remove duplicates by converting the list to a dictionary!')
 
 #Dictionaries don't allow duplicates.
 #You can remove duplicates simply by converting the list into a dictionary and then back to a list.
